@@ -50,7 +50,8 @@ try {
 const  data:unknown = " chai aur code "
 const strData: string = data as string 
 
-type  Role = "admin" | "user"
+type  Role = "admin" | "user" |"superadmin" ;
+
 
 function redirectBasedOnRole (role:Role): void {
     if(role === "admin"){
@@ -62,4 +63,12 @@ function redirectBasedOnRole (role:Role): void {
         return;
         
     }
+    role;
+
+}
+
+function neverReturn(): never {
+     while(true){
+            
+     }
 }
